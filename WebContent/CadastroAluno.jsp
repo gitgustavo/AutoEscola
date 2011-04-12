@@ -113,44 +113,7 @@
 </tr>
 </table>
 </center>
-<!--  
-Nome:
-<h:inputText id="nome" value="#{aluno.nome}" size="100" maxlength="100"/> <br/>
-RG:
-<h:inputText id="rg" value="#{aluno.rg}" size="10" maxlength="10"/> <br/>
-CPF:
-<h:inputText id="cpf" value="#{aluno.cpf}" size="11" maxlength="11"/> <br/>
-Data de Nascimento:
-<h:inputText id="dataNascimento" value="#{aluno.dataNascimento}"/> <br/>
-<br/>
-Endereço: <br/>
-Rua: 
-<h:inputText id="rua" value="#{aluno.rua}" size="100" maxlength="200"/> <br/>
-Numero: 
-<h:inputText id="numero" value="#{aluno.numero}" maxlength="10"/> <br/>
-CEP:
-<h:inputText id="cep" value="#{aluno.cep}" size="12" maxlength="12"/> <br/>
-Bairro: 
-<h:inputText id="bairro" value="#{aluno.bairro}" maxlength="50"/> <br/>
-Cidade: 
-<h:inputText id="cidade" value="#{aluno.cidade}" maxlength="100"/> <br/>
-Estado:
-<h:inputText id="estado" value="#{aluno.estado}" maxlength="50"/> <br/>
-Complemento:
-<h:inputText id="complemento" value="#{aluno.complemento}" size="100" maxlength="200"/> <br/>
-Telefones:
-<h:inputText id="telefone1" value="#{aluno.telefone1}" maxlength="45" />
-<h:inputText id="telefone2" value="#{aluno.telefone2}" maxlength="45" /> <br/>
-<br/>
-E-mail:
-<h:inputText id="email" value="#{aluno.email}" maxlength="45" /> <br/>
-Login:
-<h:inputText id="login" value="#{aluno.login}" maxlength="45" /> <br/>
-Senha:
-<h:inputText id="senha" value="#{aluno.senha}" maxlength="45" /> <br/>
-Confirmar Senha:
-<h:inputText id="comfimarSenha" value="#{aluno.confirmarSenha}" maxlength="45" /> <br/>
--->
+
 <br/>
 <center>
 <h:commandButton value="Adicionar" action="#{aluno.inserir}"/>
