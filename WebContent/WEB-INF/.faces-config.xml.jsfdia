@@ -7,8 +7,13 @@
    <PROCESS-ITEM-OUTPUT ID="SUCCESS::#PortalAluno.jsp" NAME="output"
     PATH="/PortalAluno.jsp" TARGET="rules:#PortalAluno.jsp"
     TITLE="SUCCESS" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="FAILURE::#ListaAluno.jsp" NAME="output1"
+    PATH="/ListaAluno.jsp" TARGET="rules:#ListaAluno.jsp"
+    TITLE="FAILURE" model-entity="JSFProcessItemOutput"/>
   </PROCESS-ITEM>
  </PROCESS-ITEM>
  <PROCESS-ITEM NAME="rules:#PortalAluno.jsp" PATH="/PortalAluno.jsp"
   SHAPE="392,176,50,25" model-entity="JSFProcessGroup" persistent="true"/>
+ <PROCESS-ITEM NAME="rules:#ListaAluno.jsp" PATH="/ListaAluno.jsp"
+  SHAPE="256,289,0,0" model-entity="JSFProcessGroup"/>
 </PROCESS>

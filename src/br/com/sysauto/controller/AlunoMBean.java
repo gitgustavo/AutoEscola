@@ -8,7 +8,7 @@ import br.com.sysauto.util.exceptions.BDException;
 import br.com.sysauto.util.exceptions.BusinessException;
 
 public class AlunoMBean {
-	private Aluno aluno;
+	private Aluno aluno = new Aluno();
 	private List<Aluno> alunos;
 
 	public Aluno getAluno() {
@@ -32,6 +32,7 @@ public class AlunoMBean {
 	
 	public String actionCadastroAluno () {
 		boolean validate = false;
+		
 		try {
 			FachadaNegocio negocio = FachadaNegocio.getInstance();
 			validate = negocio.cadastrarAluno(this.aluno);
@@ -41,7 +42,7 @@ public class AlunoMBean {
 		} catch (BusinessException b) {
 			// Tratar as exceções da camada de negocio
 		}
-		
+		System.out.println("OKEY - antes if");
 		if (validate) {
 			return "SUCCESS";
 		} else {

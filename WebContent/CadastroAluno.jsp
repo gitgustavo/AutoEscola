@@ -108,7 +108,6 @@
 <tr>
 <td align="right">Confirmar Senha:</td>
 <td>
-<h:inputText id="comfimarSenha" value="#{AlunoMBean.aluno.confirmarSenha}" maxlength="45" />
 </td>
 </tr>
 </table>
@@ -116,7 +115,6 @@
 
 <br/>
 <center>
-<h:commandButton value="<< Voltar" action="#{history.back(-1)}"/>
 <h:commandButton value="Cadastrar" action="#{AlunoMBean.actionCadastroAluno}"/>
 <h:commandButton value="Cancelar" action="#{aluno.inserir}"/>
 </center>

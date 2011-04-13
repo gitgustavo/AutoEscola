@@ -3,11 +3,11 @@ package br.com.sysauto.dao.memoria;
 import java.util.List;
 import java.util.Vector;
 
-import br.com.sysauto.dao.IProfessorDAO;
+
 import br.com.sysauto.model.Professor;
 import br.com.sysauto.util.exceptions.BDException;
 
-public class MemoriaProfessorDAO implements IProfessorDAO {
+public class MemoriaProfessorDAO {
 
 	private static MemoriaProfessorDAO singleton = null;
 	private List<Professor> professores;
@@ -23,14 +23,12 @@ public class MemoriaProfessorDAO implements IProfessorDAO {
 		}
 		return singleton;
 	}
-	
-	@Override
+
 	public boolean inserir(Professor _professore) throws BDException {
 		// TODO Auto-generated method stub
 		return this.professores.add(_professore);
 	}
 
-	@Override
 	public boolean editar(Professor _professore) throws BDException {
 		// TODO Auto-generated method stub
 		int idx = this.professores.indexOf(_professore);
@@ -41,14 +39,13 @@ public class MemoriaProfessorDAO implements IProfessorDAO {
 		}
 		return result;
 	}
-
-	@Override
+	
 	public List<Professor> listarTodos() throws BDException {
 		// TODO Auto-generated method stub
 		return professores;
 	}
 
-	@Override
+
 	public boolean excluir(String _cpfProfessor) throws BDException {
 		// TODO Auto-generated method stub
 		int idx = this.busca(_cpfProfessor);

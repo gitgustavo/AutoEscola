@@ -19,7 +19,6 @@ public class FachadaNegocio {
 	}
 	
 	public boolean cadastrarAluno (Aluno _aluno) throws BusinessException, BDException{
-		CadastroAluno cadastro = new CadastroAluno ();
-		return cadastro.cadastrarAluno(_aluno);	
+		return false;
 	}
 }

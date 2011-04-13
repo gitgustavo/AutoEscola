@@ -3,11 +3,10 @@ package br.com.sysauto.dao.memoria;
 import java.util.List;
 import java.util.Vector;
 
-import br.com.sysauto.dao.IVeiculoDAO;
 import br.com.sysauto.model.Veiculo;
 import br.com.sysauto.util.exceptions.BDException;
 
-public class MemoriaVeiculoDAO implements IVeiculoDAO {
+public class MemoriaVeiculoDAO {
 
 	private static MemoriaVeiculoDAO singleton = null;
 	private List<Veiculo> veiculos;
@@ -23,14 +22,12 @@ public class MemoriaVeiculoDAO implements IVeiculoDAO {
 		}
 		return singleton;
 	}
-	
-	@Override
+
 	public boolean inserir(Veiculo _veiculo) throws BDException {
 		// TODO Auto-generated method stub
 		return this.veiculos.add(_veiculo);
 	}
 
-	@Override
 	public boolean editar(Veiculo _veiculo) throws BDException {
 		// TODO Auto-generated method stub
 		int idx = this.veiculos.indexOf(_veiculo);
@@ -42,13 +39,12 @@ public class MemoriaVeiculoDAO implements IVeiculoDAO {
 		return result;
 	}
 
-	@Override
+
 	public List<Veiculo> listarTodos() throws BDException {
 		// TODO Auto-generated method stub
 		return veiculos;
 	}
 
-	@Override
 	public boolean excluir(String _placaVeiculo) throws BDException {
 		// TODO Auto-generated method stub
 		int idx = this.busca(_placaVeiculo);

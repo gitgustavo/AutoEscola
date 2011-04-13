@@ -3,11 +3,10 @@ package br.com.sysauto.dao.memoria;
 import java.util.List;
 import java.util.Vector;
 
-import br.com.sysauto.dao.IDisciplinaDAO;
 import br.com.sysauto.model.Disciplina;
 import br.com.sysauto.util.exceptions.BDException;
 
-public class MemoriaDisciplinaDAO implements IDisciplinaDAO {
+public class MemoriaDisciplinaDAO {
 
 	private static MemoriaDisciplinaDAO singleton = null;
 	private List<Disciplina> disciplinas;
@@ -24,13 +23,13 @@ public class MemoriaDisciplinaDAO implements IDisciplinaDAO {
 		return singleton;
 	}
 	
-	@Override
+
 	public boolean inserir(Disciplina _disciplina) throws BDException {
 		// TODO Auto-generated method stub
 		return this.disciplinas.add(_disciplina);
 	}
 
-	@Override
+
 	public boolean editar(Disciplina _disciplina) throws BDException {
 		// TODO Auto-generated method stub
 		int idx = this.disciplinas.indexOf(_disciplina);
@@ -42,13 +41,11 @@ public class MemoriaDisciplinaDAO implements IDisciplinaDAO {
 		return result;
 	}
 
-	@Override
 	public List<Disciplina> listarTodos() throws BDException {
 		// TODO Auto-generated method stub
 		return disciplinas;
 	}
 
-	@Override
 	public boolean excluir(String _idDisciplina) throws BDException {
 		// TODO Auto-generated method stub
 		int idx = this.busca(_idDisciplina);
