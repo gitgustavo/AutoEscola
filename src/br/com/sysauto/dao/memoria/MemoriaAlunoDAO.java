@@ -27,6 +27,7 @@ public class MemoriaAlunoDAO implements IAlunoDAO {
 	@Override
 	public boolean inserir(Aluno _aluno) throws BDException {
 		// TODO Auto-generated method stub
+		System.out.println("Aluno inserido com sucesso!");
 		return this.alunos.add(_aluno);
 	}
 
