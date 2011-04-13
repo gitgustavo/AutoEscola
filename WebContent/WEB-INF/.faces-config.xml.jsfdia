@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PROCESS model-entity="JSFProcess"/>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#CadastroAluno.jsp" PATH="/CadastroAluno.jsp"
+  SHAPE="128,152,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#CadastroAluno.jsp:0" NAME="item"
+   PATH="/CadastroAluno.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="SUCCESS::#PortalAluno.jsp" NAME="output"
+    PATH="/PortalAluno.jsp" TARGET="rules:#PortalAluno.jsp"
+    TITLE="SUCCESS" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#PortalAluno.jsp" PATH="/PortalAluno.jsp"
+  SHAPE="392,176,50,25" model-entity="JSFProcessGroup" persistent="true"/>
+</PROCESS>
