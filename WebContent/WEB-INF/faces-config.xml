@@ -3,8 +3,13 @@
  xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
  <managed-bean>
-  <managed-bean-name>AlunoMBean</managed-bean-name>
+  <managed-bean-name>alunoMBean</managed-bean-name>
   <managed-bean-class>br.com.sysauto.controller.AlunoMBean</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>veiculoMBean</managed-bean-name>
+  <managed-bean-class>br.com.sysauto.model.Veiculo</managed-bean-class>
   <managed-bean-scope>request</managed-bean-scope>
  </managed-bean>
 </faces-config>

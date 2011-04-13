@@ -35,14 +35,14 @@
 <tr>
 <td align="right">Descrição do Veiculo:</td>
 <td>
-<h:inputText id="descricao" value="#{veiculo.descricao}" maxlength="100"/>
+<h:inputText id="descricao" value="#{veiculoMBean.descricao}" maxlength="100"/>
 </td>
 </tr>
 </table>
 </center>
 <br/>
 <center>
-<h:commandButton value="Adicionar" action="#{veiculo.adicionar}"/>
+<h:commandButton value="Adicionar" action="#{veiculoMBean.adicionar}"/>
 </center>
 <hr/>
 <center> Lista de Veículos 
@@ -59,7 +59,7 @@
 <center>
 <h:commandButton value="<< Voltar" action="#{history.back(-1)}"/>
 <h:commandButton value="Cancelar" action="#{aluno.inserir}"/>
-<h:commandButton value="Cadastrar" action="#{veiculo.inserir}"/>
+<h:commandButton value="Cadastrar" action="#{veiculoMBean.cadastrar}"/>
 </center>
 </h:form>
 </f:view>
