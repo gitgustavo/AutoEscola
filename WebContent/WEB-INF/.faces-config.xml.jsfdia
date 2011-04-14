@@ -4,16 +4,30 @@
   SHAPE="128,152,0,0" model-entity="JSFProcessGroup">
   <PROCESS-ITEM ID="rules:#CadastroAluno.jsp:0" NAME="item"
    PATH="/CadastroAluno.jsp" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="SUCCESS::#PortalAluno.jsp" NAME="output"
-    PATH="/PortalAluno.jsp" TARGET="rules:#PortalAluno.jsp"
+   <PROCESS-ITEM-OUTPUT ID="SUCCESS::#ListarAlunos.jsp" NAME="output"
+    PATH="/ListarAlunos.jsp" TARGET="rules:#ListarAlunos.jsp"
     TITLE="SUCCESS" model-entity="JSFProcessItemOutput"/>
-   <PROCESS-ITEM-OUTPUT ID="FAILURE::#ListaAluno.jsp" NAME="output1"
-    PATH="/ListaAluno.jsp" TARGET="rules:#ListaAluno.jsp"
+   <PROCESS-ITEM-OUTPUT ID="FAILURE::#PortalALuno.jsp" NAME="output1"
+    PATH="/PortalALuno.jsp" TARGET="rules:#PortalALuno.jsp"
     TITLE="FAILURE" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="EDITAR::#EditarAluno.jsp" NAME="output2"
+    PATH="/EditarAluno.jsp" TARGET="rules:#EditarAluno.jsp"
+    TITLE="EDITAR" model-entity="JSFProcessItemOutput"/>
   </PROCESS-ITEM>
  </PROCESS-ITEM>
  <PROCESS-ITEM NAME="rules:#PortalAluno.jsp" PATH="/PortalAluno.jsp"
   SHAPE="392,176,50,25" model-entity="JSFProcessGroup" persistent="true"/>
- <PROCESS-ITEM NAME="rules:#ListaAluno.jsp" PATH="/ListaAluno.jsp"
-  SHAPE="256,289,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#ListarAlunos.jsp" PATH="/ListarAlunos.jsp"
+  SHAPE="256,289,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ListarAlunos.jsp:0" NAME="item"
+   PATH="/ListarAlunos.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="EDITAR::#EditarAluno.jsp" NAME="output"
+    PATH="/EditarAluno.jsp" TARGET="rules:#EditarAluno.jsp"
+    TITLE="EDITAR" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#PortalALuno.jsp" PATH="/PortalALuno.jsp"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#EditarAluno.jsp" PATH="/EditarAluno.jsp"
+  SHAPE="464,273,0,0" model-entity="JSFProcessGroup"/>
 </PROCESS>
